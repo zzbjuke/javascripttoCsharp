@@ -1,0 +1,5 @@
+D:\项目\Net\ParseLanguage\ParseLanguageAPP\XZ.ParseLanguage2.0\XZ.ParseLanguage\bin\Debug\XZ.ParseLanguage.dll
+D:\项目\Net\ParseLanguage\ParseLanguageAPP\XZ.ParseLanguage2.0\XZ.ParseLanguage\bin\Debug\XZ.ParseLanguage.pdb
+D:\项目\Net\ParseLanguage\ParseLanguageAPP\XZ.ParseLanguage2.0\XZ.ParseLanguage\obj\Debug\XZ.ParseLanguage.dll
+D:\项目\Net\ParseLanguage\ParseLanguageAPP\XZ.ParseLanguage2.0\XZ.ParseLanguage\obj\Debug\XZ.ParseLanguage.pdb
+D:\项目\Net\ParseLanguage\ParseLanguageAPP\XZ.ParseLanguage2.0\XZ.ParseLanguage\obj\Debug\XZ.ParseLanguage.csprojResolveAssemblyReference.cache

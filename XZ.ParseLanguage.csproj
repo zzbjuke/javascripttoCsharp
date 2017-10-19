@@ -1,0 +1,151 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{2755DBB5-6695-4D3D-8037-18F0B0AA6B7D}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>XZ.ParseLanguage</RootNamespace>
+    <AssemblyName>XZ.ParseLanguage</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AnalysisBase.cs" />
+    <Compile Include="Element\ConstEleme.cs" />
+    <Compile Include="Element\DefinitionEleme.cs" />
+    <Compile Include="Element\FunEleme.cs" />
+    <Compile Include="Element\JavaScirpts\JCaseEleme.cs" />
+    <Compile Include="Element\JavaScirpts\JCatchEleme.cs" />
+    <Compile Include="Element\JavaScirpts\JForeachEleme.cs" />
+    <Compile Include="Element\JavaScirpts\JForEleme.cs" />
+    <Compile Include="Element\JavaScirpts\JArrayEleme.cs" />
+    <Compile Include="Element\JavaScirpts\JConstEleme.cs" />
+    <Compile Include="Element\JavaScirpts\JDefinitionEleme.cs" />
+    <Compile Include="Element\JavaScirpts\JDictionaryEleme.cs" />
+    <Compile Include="Element\JavaScirpts\JFunEleme.cs" />
+    <Compile Include="Element\JavaScirpts\JIFEleme.cs" />
+    <Compile Include="Element\JavaScirpts\JIndexEleme.cs" />
+    <Compile Include="Element\JavaScirpts\JLineEleme.cs" />
+    <Compile Include="Element\JavaScirpts\JMethodEleme.cs" />
+    <Compile Include="Element\JavaScirpts\JNewEleme.cs" />
+    <Compile Include="Element\JavaScirpts\JPropertyEleme.cs" />
+    <Compile Include="Element\JavaScirpts\JReturnValue.cs" />
+    <Compile Include="Element\JavaScirpts\JSwitchEleme.cs" />
+    <Compile Include="Element\JavaScirpts\JThrowEleme.cs" />
+    <Compile Include="Element\JavaScirpts\JTryEleme.cs" />
+    <Compile Include="Element\JavaScirpts\JTypeofEleme.cs" />
+    <Compile Include="Element\JavaScirpts\JValueEleme.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Element\JavaScirpts\JVariableEleme.cs" />
+    <Compile Include="Element\JavaScirpts\JWhereEleme.cs" />
+    <Compile Include="Element\JavaScirpts\JWhileEleme.cs" />
+    <Compile Include="Element\MarkElem.cs" />
+    <Compile Include="Element\MethodEleme.cs" />
+    <Compile Include="Element\NoEleme.cs" />
+    <Compile Include="Element\OperatorEleme.cs" />
+    <Compile Include="Element\PropertyEleme.cs" />
+    <Compile Include="Element\RangeEleme.cs" />
+    <Compile Include="Element\ValueEleme.cs" />
+    <Compile Include="Element\VariableEleme.cs" />
+    <Compile Include="Entity\CharacteristicInfo.cs" />
+    <Compile Include="Entity\CPoint.cs" />
+    <Compile Include="Element\BEleme.cs" />
+    <Compile Include="Entity\EBAType.cs" />
+    <Compile Include="Entity\ELanguage.cs" />
+    <Compile Include="Entity\EPType.cs" />
+    <Compile Include="Entity\EValueType.cs" />
+    <Compile Include="Entity\EVariableType.cs" />
+    <Compile Include="Element\JavaScirpts\JPageEleme.cs" />
+    <Compile Include="Entity\LineAnnInfo.cs" />
+    <Compile Include="interfaces\IBreak.cs" />
+    <Compile Include="interfaces\IHChild.cs" />
+    <Compile Include="interfaces\IVariableAttr.cs" />
+    <Compile Include="Entity\ParserText.cs" />
+    <Compile Include="interfaces\IVariableValue.cs" />
+    <Compile Include="JavaSciprtAnalysis.cs" />
+    <Compile Include="Parser\JavaScripts\Span\ArraySpan.cs" />
+    <Compile Include="Parser\JavaScripts\Span\DictionarySpan.cs" />
+    <Compile Include="Parser\JavaScripts\Span\ForSpan.cs" />
+    <Compile Include="Parser\JavaScripts\Span\FunctionSpan.cs" />
+    <Compile Include="Parser\JavaScripts\Span\IFSpan.cs" />
+    <Compile Include="Parser\JavaScripts\Span\NewSpan.cs" />
+    <Compile Include="Parser\JavaScripts\Span\SwitchSpan.cs" />
+    <Compile Include="Parser\JavaScripts\Span\ThrowSpan.cs" />
+    <Compile Include="Parser\JavaScripts\Span\TrySpan.cs" />
+    <Compile Include="Parser\JavaScripts\Span\TypeofInstanceofSpan.cs" />
+    <Compile Include="Parser\JavaScripts\Span\ValueSpan.cs" />
+    <Compile Include="Parser\JavaScripts\Span\VariableSpan.cs" />
+    <Compile Include="Parser\JavaScripts\Span\VarSpan.cs" />
+    <Compile Include="Parser\JavaScripts\Span\WhileSpan.cs" />
+    <Compile Include="Parser\LineAnnotation.cs" />
+    <Compile Include="Parser\Operate.cs" />
+    <Compile Include="Parser\BParser.cs" />
+    <Compile Include="Parser\FormatString.cs" />
+    <Compile Include="Parser\JavaScripts\JavaSciptSpan.cs" />
+    <Compile Include="Parser\JavaScripts\JavaScriptOperate.cs" />
+    <Compile Include="Parser\JavaScripts\JavaScriptCodeParser.cs" />
+    <Compile Include="Parser\Span.cs" />
+    <Compile Include="Parser\JavaScripts\ToJavaScript.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Types\JavaScripts\BaseType.cs" />
+    <Compile Include="Types\JavaScripts\ExceptionPoint.cs" />
+    <Compile Include="Types\JavaScripts\JsBase.cs" />
+    <Compile Include="Types\JavaScripts\NaN.cs" />
+    <Compile Include="Types\JavaScripts\Null.cs" />
+    <Compile Include="Types\JavaScripts\ToObject.cs" />
+    <Compile Include="Types\JavaScripts\Undefined.cs" />
+    <Compile Include="Types\JavaScripts\VarType.cs" />
+    <Compile Include="Types\JavaScripts\window.cs" />
+    <Compile Include="Types\JavaScripts\_Array.cs" />
+    <Compile Include="Types\JavaScripts\_Bool.cs" />
+    <Compile Include="Types\JavaScripts\_Console.cs" />
+    <Compile Include="Types\JavaScripts\_Date.cs" />
+    <Compile Include="Types\JavaScripts\_Dictionary.cs" />
+    <Compile Include="Types\JavaScripts\_Function.cs" />
+    <Compile Include="Types\JavaScripts\_Number.cs" />
+    <Compile Include="Types\JavaScripts\_String.cs" />
+    <Compile Include="Types\JavaScripts\_U_.cs" />
+    <Compile Include="Types\ToCommon.cs" />
+    <Compile Include="Utils\ToObject.cs" />
+    <Compile Include="Utils\Tools.cs" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
