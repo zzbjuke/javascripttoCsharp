@@ -1,0 +1,18 @@
+调用方法
+
+var analy = new JavaSciprtAnalysis(@"C:\Users\Documents\WebSite3");
+analy.WriteRoot = @"C:\Users\Documents\Visual Studio 2012\Projects\TestJs\TestJs";
+analy.Eexc("JavaScript2.js");
+			
+目前不是将JS 100%转换为c#
+if必须带有{}如：
+if(){
+	//脚本
+}else{
+
+}
+
+switch 中case 不能带{}
+
+
+也可以通过 dynamic 来实现。
